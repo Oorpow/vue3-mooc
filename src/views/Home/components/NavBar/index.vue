@@ -6,72 +6,70 @@
 </template>
 
 <script setup lang="ts">
-import MobileNavBar from './mobile/index.vue'
-import PcNavBar from './pc/index.vue'
-import { ref } from 'vue';
-import { useIsMobile } from '@/composables';
+import MobileNavBar from "./mobile/index.vue";
+import PcNavBar from "./pc/index.vue";
+import { ref } from "vue";
+import { useIsMobile } from "@/composables";
 
 interface ArrT {
-	id: number
-	name: string
+	id: number;
+	name: string;
 }
 
 const navList = ref<ArrT[]>([
 	{
 		id: 1,
-		name: '设计'
+		name: "设计",
 	},
 	{
 		id: 2,
-		name: 'Web'
+		name: "Web",
 	},
 	{
 		id: 3,
-		name: '前端'
+		name: "前端",
 	},
 	{
 		id: 4,
-		name: '后端'
+		name: "后端",
 	},
 	{
 		id: 5,
-		name: 'Java'
+		name: "Java",
 	},
 	{
 		id: 6,
-		name: 'Vue'
+		name: "Vue",
 	},
 	{
 		id: 7,
-		name: 'React'
+		name: "React",
 	},
 	{
 		id: 8,
-		name: 'TypeScript'
+		name: "TypeScript",
 	},
 	{
 		id: 9,
-		name: 'TypeScript'
+		name: "TypeScript",
 	},
 	{
 		id: 10,
-		name: 'TypeScript'
+		name: "TypeScript",
 	},
 	{
 		id: 11,
-		name: 'TypeScript'
+		name: "TypeScript",
 	},
 	{
 		id: 12,
-		name: 'TypeScript'
+		name: "TypeScript",
 	},
 	{
 		id: 13,
-		name: '	其它'
-	}
-])
+		name: "	其它",
+	},
+]);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

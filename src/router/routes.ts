@@ -9,4 +9,4 @@ export const mobileRoutes: RouteRecordRaw[] = [
 	},
 ];
 
-export const pcRoutes: RouteRecordRaw[] = []
+export const pcRoutes: RouteRecordRaw[] = [];

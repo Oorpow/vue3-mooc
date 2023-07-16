@@ -12,6 +12,7 @@
 			<!-- 汉堡按钮 -->
 			<li
 				class="fixed top-0 right-0 h-4 px-1 flex items-center bg-white z-20 shadow-l-white"
+				@click="isShow = true"
 			>
 				<Icon icon="mdi-light:menu" class="text-xl" />
 			</li>
@@ -28,10 +29,15 @@
 				{{ item.name }}
 			</li>
 		</ul>
+		<PopUp v-model="isShow">
+			<Menu @menuItemClick="handleSliderClick" />
+		</PopUp>
 	</div>
 </template>
 
 <script setup lang="ts" generic="T extends { id: number, name: string }">
+import PopUp from "@/components/PopUp/index.vue";
+import Menu from "@/views/Home/components/Menu/index.vue";
 import { onBeforeUpdate, ref, watch } from "vue";
 import { useScroll } from "@vueuse/core";
 import { Icon } from "@iconify/vue";
@@ -49,6 +55,7 @@ const sliderStyle = ref({
 
 const handleSliderClick = (index: number) => {
 	currentSliderIndex.value = index;
+	isShow.value = false;
 };
 
 const itemRefs: any[] = [];
@@ -76,4 +83,7 @@ watch(currentSliderIndex, (newVal) => {
 		width: sliderItemRect.width + "px",
 	};
 });
+
+/** 弹出层是否可见 */
+const isShow = ref(false);
 </script>

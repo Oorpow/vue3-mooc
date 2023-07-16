@@ -9,7 +9,7 @@ import { useRem } from "./composables";
 
 const app = createApp(App);
 
-useRem()
+useRem();
 app.use(createPinia());
 app.use(router);
 
