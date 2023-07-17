@@ -29,14 +29,13 @@
 				{{ item.name }}
 			</li>
 		</ul>
-		<PopUp v-model="isShow">
+		<MyPopUp v-model="isShow">
 			<Menu @menuItemClick="handleSliderClick" />
-		</PopUp>
+		</MyPopUp>
 	</div>
 </template>
 
 <script setup lang="ts" generic="T extends { id: number, name: string }">
-import PopUp from "@/components/PopUp/index.vue";
 import Menu from "@/views/Home/components/Menu/index.vue";
 import { onBeforeUpdate, ref, watch } from "vue";
 import { useScroll } from "@vueuse/core";

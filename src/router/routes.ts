@@ -9,4 +9,11 @@ export const mobileRoutes: RouteRecordRaw[] = [
 	},
 ];
 
-export const pcRoutes: RouteRecordRaw[] = [];
+export const pcRoutes: RouteRecordRaw[] = [
+	{
+		path: '/',
+		name: 'main',
+		component: () => import('@/views/Layout/index.vue'),
+		children: []
+	}
+];
