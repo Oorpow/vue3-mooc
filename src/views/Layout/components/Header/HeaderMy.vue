@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<MyButton>my</MyButton>
+		my
+		<!-- <MyButton>my</MyButton> -->
 	</div>
 </template>
 
