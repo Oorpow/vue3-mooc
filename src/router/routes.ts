@@ -14,6 +14,10 @@ export const pcRoutes: RouteRecordRaw[] = [
 		path: '/',
 		name: 'main',
 		component: () => import('@/views/Layout/index.vue'),
-		children: []
+		children: [{
+			path: '/home',
+			name: 'pc-home',
+			component: () => import('@/views/Home/index.vue')
+		}]
 	}
 ];
