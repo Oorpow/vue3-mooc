@@ -8,7 +8,7 @@
 		<Transition name="popover">
 			<div
 				v-if="isVisiable"
-				class="absolute right-3 top-4 w-[140px] rounded-sm bg-white border border-zinc-100 shadow-md duration-300"
+				class="absolute right-2 top-[50px] w-[140px] rounded-sm bg-white border border-zinc-100 shadow-md duration-300"
 			>
 				<slot name="content"></slot>
 			</div>
@@ -33,7 +33,7 @@ const onMouseLeave = () => {
 <style lang="scss" scoped>
 .popover-enter-active,
 .popover-leave-active {
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .popover-enter-from,

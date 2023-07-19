@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full bg-white border-b border-b-zinc-200 px-2 py-1">
-		<div class="flex items-center">
+		<div class="flex items-center gap-1">
 			<div>logo</div>
 			<HeaderSearch />
 			<HeaderTheme />
